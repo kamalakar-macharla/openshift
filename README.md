@@ -5,12 +5,12 @@ git clone
 
 oc apply -f operator/subscription.yaml	# This takes couple of minutes to install the RedHat openshift pipeline operator.
 
-$ oc apply -f openshift/build-task.yaml; \
-> oc apply -f openshift/deploy-task.yaml; \
-> oc apply -f openshift/pipeline.yaml; \
-> oc apply -f openshift/pipelinerun.yaml;
+oc apply -f openshift/build-task.yaml; \
+oc apply -f openshift/deploy-task.yaml; \
+oc apply -f openshift/pipeline.yaml; \
+oc apply -f openshift/pipelinerun.yaml;
 
-$ tkn pipelinerun logs pipelinerunPipeline still running ...
+tkn pipelinerun logs pipelinerunPipeline still running ...
 [build : say-hello] Running the Build
 
 [deploy : say-hello] Doing the deployment
