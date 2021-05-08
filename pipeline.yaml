@@ -1,0 +1,14 @@
+apiVersion: tekton.dev/v1beta1
+kind: Pipeline
+metadata:
+  name: pipeline
+spec:
+  tasks:
+    - name: build
+      taskRef:
+        name: build-task
+    - name: deploy
+      taskRef:
+        name: deploy-task
+      runAfter:
+        - build
