@@ -1,4 +1,6 @@
 # openshift
+# This is basic pipelinerun with simple basic two tasks which simply displays a Hello World.
+
 
 $ oc apply -f operator/subscription.yaml	
 $ cp ./tasks/hello.yaml ./tasks/build-task.yaml
