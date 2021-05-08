@@ -1,18 +1,16 @@
 # openshift
 # This is basic pipelinerun with simple basic two tasks which simply displays a Hello World.
 
+git clone 
 
-$ oc apply -f operator/subscription.yaml	
-$ cp ./tasks/hello.yaml ./tasks/build-task.yaml
-$ cp ./tasks/hello.yaml ./tasks/deploy-task.yaml
+oc apply -f operator/subscription.yaml	# This takes couple of minutes to install the RedHat openshift pipeline operator.
 
-$ vim ./tasks/pipeline.yaml
-$ vim ./tasks/pipelinerun.yaml
+$ oc apply -f openshift/build-task.yaml; \
+> oc apply -f openshift/deploy-task.yaml; \
+> oc apply -f openshift/pipeline.yaml; \
+> oc apply -f openshift/pipelinerun.yaml;
 
-$oc apply -f tasks/build-task.yaml  
-$oc apply -f tasks/deploy-task.yaml		  
+$ tkn pipelinerun logs pipelinerunPipeline still running ...
+[build : say-hello] Running the Build
 
-$ tkn pipelinerun logs pipelinerun
-[build : say-hello] Hello World
-
-[deploy : say-hello] Hello World 
+[deploy : say-hello] Doing the deployment
