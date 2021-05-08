@@ -10,7 +10,8 @@ oc apply -f openshift/deploy-task.yaml; \
 oc apply -f openshift/pipeline.yaml; \
 oc apply -f openshift/pipelinerun.yaml;
 
-tkn pipelinerun logs pipelinerunPipeline still running ...
+tkn pipelinerun logs pipelinerun
+Pipeline still running ...
 
 [build : say-hello] Running the Build
 
