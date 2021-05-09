@@ -14,4 +14,4 @@ spec:
   workspaces:
     - name: messages
       description: The folder where we write the message to
-      mountPath: /root
+      mountPath: /kamal
