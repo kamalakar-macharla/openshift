@@ -1,5 +1,5 @@
 # openshift
-# This is basic pipelinerun with simple basic two tasks which simply displays a Hello World.
+## This is basic pipelinerun with simple basic two tasks which simply displays a Hello World.
 
 git clone https://github.com/kamalakar-macharla/openshift.git
 
