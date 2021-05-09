@@ -1,4 +1,4 @@
-# openshift
+# OpenShift
 ## This is basic pipelinerun with simple basic two tasks which simply displays a echo msg.
 ```
 git clone https://github.com/kamalakar-macharla/openshift.git
