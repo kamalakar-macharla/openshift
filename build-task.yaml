@@ -6,12 +6,10 @@ spec:
   steps:
     - name: say-hello
       image: registry.access.redhat.com/ubi8/ubi
+      workingDir: /workspace/source
       command: ["/bin/bash", "-c"]
       args:
         - |-
           echo 'Doing a new build'
           echo 'the end'
-  workspaces:
-    - name: messages
-      description: The folder where we write the message to
-      mountPath: /kamal
+
