@@ -8,7 +8,6 @@ spec:
   steps:
     - name: say-hello
       image: registry.access.redhat.com/ubi8/ubi
-      workingDir: /workspace/source
       command: ["/bin/bash", "-c"]
       args:
         - |-
