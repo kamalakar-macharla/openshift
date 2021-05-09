@@ -11,5 +11,7 @@ spec:
       args:
         - |-
           echo 'Doing a new build'
+          pwd
+          ls -l
           echo 'the end'
 
