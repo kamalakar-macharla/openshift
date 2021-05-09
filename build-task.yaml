@@ -6,9 +6,11 @@ spec:
   steps:
     - name: say-hello
       image: registry.access.redhat.com/ubi8/ubi
-      command:
-        - /bin/bash
-      args: ['-c', 'echo Running the Build','pwd','ls -l']
+      command: ["/bin/bash", "-c"]
+      args:
+        - |-
+          echo 'Doing a new build'
+          echo 'the end'
   workspaces:
     - name: messages
       description: The folder where we write the message to
