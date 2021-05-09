@@ -9,7 +9,4 @@ spec:
       command:
         - /bin/bash
       args: ['-c', 'echo Running the Build','pwd','ls -l']
-  workspaces:
-    - name: messages
-      description: The folder where we write the message to
-      mountPath: /custom/path/relative/to/root
+
