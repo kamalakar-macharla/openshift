@@ -17,3 +17,8 @@ Pipeline still running ...
 [build : say-hello] Running the Build
 
 [deploy : say-hello] Doing the deployment
+
+
+### If any file edit and re-run
+oc delete -f ./openshift/filename.yaml;
+oc apply -f ./openshift/filename.yaml
