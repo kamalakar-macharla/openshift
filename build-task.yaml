@@ -13,8 +13,8 @@ spec:
           echo 'Doing a new build'
           pwd
           ls -l
-          echo 'volume mount check' > /my-cache/bar
+          echo 'volume mount check' > /source-pvc/bar
           echo 'the end'
       volumeMounts:
-        - name: my-cache
-          mountPath: /my-cache
+        - name: source-pvc
+          mountPath: /source-pvc
