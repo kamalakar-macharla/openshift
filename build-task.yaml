@@ -5,7 +5,6 @@ metadata:
 spec:
   steps:
     - name: ws-for-task
-      description: The folder where we write the message to
       mountPath: /custom/path/relative/to/root  
     - name: say-hello
       image: registry.access.redhat.com/ubi8/ubi
