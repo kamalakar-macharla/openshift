@@ -1,5 +1,9 @@
 # OpenShift
 ## This is basic pipelinerun with simple basic two tasks which simply displays a echo msg.
+
+go to https://learn.openshift.com/   -> GitOps -> Using OpenShift Pipelines
+oc login -u admin -p admin
+
 ```
 git clone https://github.com/kamalakar-macharla/openshift.git
 
