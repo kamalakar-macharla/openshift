@@ -8,7 +8,6 @@ oc login -u admin -p admin
 oc apply -f ./operator/subscription.yaml; # This is will take couple of minutes to run
 
 git clone https://github.com/kamalakar-macharla/openshift.git; \
-oc apply -f ./operator/subscription.yaml; \	
 oc apply -f ./openshift/build-task.yaml; \
 oc apply -f ./openshift/deploy-task.yaml; \
 oc apply -f ./openshift/pipeline.yaml; \
