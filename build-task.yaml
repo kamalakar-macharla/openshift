@@ -5,6 +5,8 @@ metadata:
 spec:
   workspaces:
   - name: messages
+    optional: true
+    mountPath: /kamal/mac
   steps:
     - name: say-hello
       image: registry.access.redhat.com/ubi8/ubi
