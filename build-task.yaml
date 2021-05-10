@@ -3,9 +3,6 @@ kind: Task
 metadata:
   name: build-task
 spec:
-  workspaces:
-  - name: messages
-    mountPath: /kamal/mac
   steps:
     - name: say-hello
       image: registry.access.redhat.com/ubi8/ubi
