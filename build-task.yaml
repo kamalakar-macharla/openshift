@@ -5,6 +5,7 @@ metadata:
 spec:
   workspaces:
   - name: messages
+    optional: true
   steps:
     - name: say-hello
       image: registry.access.redhat.com/ubi8/ubi
@@ -14,5 +15,5 @@ spec:
           echo 'Doing a new build'
           pwd
           ls -l
-          echo 'volume mount check' > /source-pvc/bar
+          echo $(workspaces.messages.path)
           echo 'the end'
